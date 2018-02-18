@@ -21,21 +21,21 @@ For intregration with API.AI, create a account on [Dialog Flow](https://dialogfl
 * Create a new Agent on API.AI
 * On fulfillment enable and type your heroku URL (like this https://chatbotkadusim.herokuapp.com/webhook)
 
-+ Create a Intent [create_faq], action name “create”
-+ Create a Intent [list_faq], action name “list”
-+ Create a Intent [help], action name "help"
-+ Create a Intent [remove_from_faq], action name “remove”, PARAMETER NAME "id"
-+ Create a Intent [search], action name "search", PARAMETER NAME "query"
-+ Create a Intent [search_by_hashtag], action name "search_by_hashtag", PARAMETER NAME "query"
+Create a Intent [create_faq], action name “create”  
+Create a Intent [list_faq], action name “list”  
+Create a Intent [help], action name "help"  
+Create a Intent [remove_from_faq], action name “remove”, PARAMETER NAME "id"  
+Create a Intent [search], action name "search", PARAMETER NAME "query"  
+Create a Intent [search_by_hashtag], action name "search_by_hashtag", PARAMETER NAME "query"  
 
 * Now, build parameters for intent create_faq:
 
-+ Create a parameter name "question" with entity “@sys.any” and prompts “Type the question”
-+ Create a parameter name "answer" with entity “@sys.any” and prompts “Type the answer”
-+ Create a parameter name "hashtags" com a entity “@sys.any” e com o prompts “To which categories?”
-+ Create a parameter name "question-original" without entity and type on value “$question.original”.
-+ Create a parameter name "answer-original" without entity and type on value “$answer.original”.
-+ Create a parameter name "hashtags-original" without entity and type on value “$hashtags.original”.
+Create a parameter name "question" with entity “@sys.any” and prompts “Type the question”  
+Create a parameter name "answer" with entity “@sys.any” and prompts “Type the answer”  
+Create a parameter name "hashtags" com a entity “@sys.any” e com o prompts “To which categories?”  
+Create a parameter name "question-original" without entity and type on value “$question.original”  
+Create a parameter name "answer-original" without entity and type on value “$answer.original”  
+Create a parameter name "hashtags-original" without entity and type on value “$hashtags.original”  
 
 * For all Intents add on “Text Response” a message error and enable Webhook
 
